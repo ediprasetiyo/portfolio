@@ -16,36 +16,37 @@
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed relative">
 
-  <!-- Language Switch - di dalam header -->
-  <div class="flex gap-2 ml-4">
-    <button id="btnID" onclick="setLang('id')" 
-      class="px-3 py-1 rounded-md text-sm bg-indigo-600 text-white">🇮🇩 ID</button>
-    <button id="btnEN" onclick="setLang('en')" 
-      class="px-3 py-1 rounded-md text-sm bg-gray-300 text-gray-800">🇬🇧 EN</button>
-  </div>
-
   <!-- Header -->
   <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md sticky top-0 z-40">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-xl md:text-2xl font-bold">Edi Prasetiyo</h1>
-      <nav class="hidden md:flex space-x-6">
-        <a href="#about" class="hover:underline lang id">Tentang</a>
-        <a href="#about" class="hover:underline lang en hidden">About</a>
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl md:text-2xl font-bold">Edi Prasetiyo</h1>
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="#about" class="hover:underline lang id">Tentang</a>
+      <a href="#about" class="hover:underline lang en hidden">About</a>
 
-        <a href="#experience" class="hover:underline lang id">Pengalaman</a>
-        <a href="#experience" class="hover:underline lang en hidden">Experience</a>
+      <a href="#experience" class="hover:underline lang id">Pengalaman</a>
+      <a href="#experience" class="hover:underline lang en hidden">Experience</a>
 
-        <a href="#skills" class="hover:underline lang id">Keterampilan</a>
-        <a href="#skills" class="hover:underline lang en hidden">Skills</a>
+      <a href="#skills" class="hover:underline lang id">Keterampilan</a>
+      <a href="#skills" class="hover:underline lang en hidden">Skills</a>
 
-        <a href="#personal" class="hover:underline lang id">Info Pribadi</a>
-        <a href="#personal" class="hover:underline lang en hidden">Personal Info</a>
+      <a href="#personal" class="hover:underline lang id">Info Pribadi</a>
+      <a href="#personal" class="hover:underline lang en hidden">Personal Info</a>
 
-        <a href="#contact" class="hover:underline lang id">Kontak</a>
-        <a href="#contact" class="hover:underline lang en hidden">Contact</a>
-      </nav>
-    </div>
-  </header>
+      <a href="#contact" class="hover:underline lang id">Kontak</a>
+      <a href="#contact" class="hover:underline lang en hidden">Contact</a>
+
+      <!-- Tombol Bilingual -->
+      <div class="flex gap-2 ml-4">
+        <button id="btnID" onclick="setLang('id')" 
+          class="px-3 py-1 rounded-md text-sm bg-indigo-600 text-white">🇮🇩 ID</button>
+        <button id="btnEN" onclick="setLang('en')" 
+          class="px-3 py-1 rounded-md text-sm bg-gray-300 text-gray-800">🇬🇧 EN</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
 
   <!-- Hero -->
   <section class="text-center py-12 md:py-16 bg-white shadow fade-up px-4">
@@ -268,4 +269,5 @@
   </script>
 </body>
 </html>
+
 
