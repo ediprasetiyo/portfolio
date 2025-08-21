@@ -6,104 +6,100 @@
   <title>Portofolio - Edi Prasetiyo</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 font-sans leading-relaxed">
+<body class="bg-gray-50 font-sans leading-relaxed text-gray-800">
 
   <!-- Header -->
-  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md">
-    <div class="max-w-6xl mx-auto p-6 flex justify-between items-center">
+  <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto p-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold">Edi Prasetiyo</h1>
-      <nav>
-        <a href="#about" class="mx-3 hover:underline">Tentang Saya</a>
-        <a href="#experience" class="mx-3 hover:underline">Pengalaman</a>
-        <a href="#skills" class="mx-3 hover:underline">Keterampilan</a>
-        <a href="#contact" class="mx-3 hover:underline">Kontak</a>
+      <nav class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:underline">Tentang Saya</a>
+        <a href="#experience" class="hover:underline">Pengalaman</a>
+        <a href="#skills" class="hover:underline">Keterampilan</a>
+        <a href="#contact" class="hover:underline">Kontak</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
   <section class="text-center py-16 bg-white shadow">
-    <img src="assets/profile.jpg" alt="Foto Profil" class="w-32 h-32 object-cover rounded-full mx-auto shadow-lg">
-    <h2 class="mt-4 text-3xl font-bold">EDI PRASETIYO</h2>
-    <p class="text-gray-600">QA/QC | Business Analyst | IT Support</p>
-    <p class="text-gray-500">“Mengoptimalkan sistem dan produk agar lebih efektif & efisien.”</p>
+    <img src="assets/profile.jpg" alt="Foto Profil" 
+         class="w-36 h-36 object-cover rounded-full mx-auto shadow-lg border-4 border-white">
+    <h2 class="mt-6 text-3xl font-extrabold text-gray-800">EDI PRASETIYO</h2>
+    <p class="mt-2 text-lg text-indigo-600 font-medium">QA/QC | Business Analyst | IT Support</p>
+    <p class="mt-1 text-gray-500 italic">“Mengoptimalkan sistem dan produk agar lebih efektif & efisien.”</p>
   </section>
 
   <!-- Tentang Saya -->
-  <section id="about" class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-4">Tentang Saya</h3>
-    <p class="text-gray-700">
-      Lahir pada 1 Januari 1994, saya seorang profesional di bidang teknologi dengan pengalaman
-      lebih dari 7 tahun sebagai Business Analyst dan QA/QC. Berpengalaman dalam analisa bisnis,
-      pengujian sistem manual & otomatis, serta mendukung pengembangan sistem ERP.
+  <section id="about" class="max-w-4xl mx-auto p-8 my-12 bg-white rounded-2xl shadow">
+    <h3 class="text-2xl font-bold mb-4 border-b-2 border-indigo-500 inline-block pb-1">Tentang Saya</h3>
+    <p>
+      Saya seorang profesional di bidang teknologi dengan pengalaman lebih dari 7 tahun sebagai Business Analyst dan QA/QC. 
+      Berpengalaman dalam analisa bisnis, pengujian sistem manual & otomatis, serta mendukung pengembangan ERP Odoo. 
       Latar belakang pendidikan saya adalah S.Kom dari Universitas Budi Luhur dengan IPK 3.48.
     </p>
   </section>
 
   <!-- Pengalaman -->
-  <section id="experience" class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-6">Pengalaman Kerja</h3>
-    <div class="space-y-6">
-      <div>
-        <h4 class="font-semibold">QA/QC - PT. Garuda Digital Kreatif</h4>
-        <p class="text-sm text-gray-500">Des 2021 - Sep 2025</p>
-        <ul class="list-disc ml-5 text-gray-700">
-          <li>Membuat dokumen test case & UAT</li>
-          <li>Melakukan testing manual & otomatis dengan Selenium</li>
+  <section id="experience" class="max-w-6xl mx-auto p-8 my-12 bg-white rounded-2xl shadow">
+    <h3 class="text-2xl font-bold mb-8 border-b-2 border-indigo-500 inline-block pb-1">Pengalaman Kerja</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold text-indigo-700">QA/QC</h4>
+        <p class="text-sm text-gray-500 mb-2">PT. Garuda Digital Kreatif | Des 2021 - Sep 2025</p>
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
+          <li>Membuat dokumen Test Case, UAT & Ticketing Bug</li>
+          <li>Testing manual & otomatis (Selenium)</li>
           <li>Monitoring sprint, turnamen, dan topup</li>
-          <li>Membuat ticketing laporan bug & manual guide</li>
-          <li>Memberikan masukan desain produk di Figma</li>
+          <li>Memberikan masukan desain di Figma</li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-semibold">Business Analyst - PT. Citra Multi Services</h4>
-        <p class="text-sm text-gray-500">Jan 2018 - Des 2021</p>
-        <ul class="list-disc ml-5 text-gray-700">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-lg font-semibold text-indigo-700">Business Analyst</h4>
+        <p class="text-sm text-gray-500 mb-2">PT. Citra Multi Services | Jan 2018 - Des 2021</p>
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
           <li>Membuat flow proses bisnis & mitigasi risiko</li>
-          <li>Menggunakan diagram & blueprint dokumen untuk client</li>
-          <li>Testing sistem ERP Odoo & membuat modul sederhana</li>
-          <li>Menyusun manual guide untuk user</li>
+          <li>Testing ERP Odoo & membuat modul sederhana</li>
+          <li>Menyusun manual guide & blueprint dokumentasi</li>
         </ul>
       </div>
-      <div>
-        <h4 class="font-semibold">Call Center & IT Support - PT. Transcosmos Indonesia</h4>
-        <p class="text-sm text-gray-500">Mar 2017 - Agu 2017</p>
-        <p class="text-gray-700">Membantu dukungan teknis dan layanan pelanggan by project.</p>
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition md:col-span-2">
+        <h4 class="text-lg font-semibold text-indigo-700">Call Center & IT Support</h4>
+        <p class="text-sm text-gray-500 mb-2">PT. Transcosmos Indonesia | Mar 2017 - Agu 2017</p>
+        <p class="text-gray-700 text-sm">Membantu dukungan teknis dan layanan pelanggan (by project).</p>
       </div>
     </div>
   </section>
 
   <!-- Keterampilan -->
-  <section id="skills" class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-4">Keterampilan</h3>
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Figma</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Analisa Bisnis</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Microsoft Office</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Diagram</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Adobe Photoshop</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Odoo Functional</span>
-      <span class="px-4 py-2 bg-indigo-100 rounded-full text-indigo-700">Selenium</span>
+  <section id="skills" class="max-w-4xl mx-auto p-8 my-12 bg-white rounded-2xl shadow">
+    <h3 class="text-2xl font-bold mb-4 border-b-2 border-indigo-500 inline-block pb-1">Keterampilan</h3>
+    <div class="flex flex-wrap gap-3">
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Figma</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Analisa Bisnis</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Microsoft Office</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Diagram Tools</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Adobe Photoshop</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Odoo Functional</span>
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Selenium</span>
     </div>
   </section>
 
   <!-- Kontak -->
-  <section id="contact" class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-2xl shadow text-center">
-    <h3 class="text-2xl font-bold mb-4">Kontak</h3>
-    <p class="text-gray-600">Hubungi saya melalui email atau LinkedIn:</p>
-    <div class="mt-4 space-x-4">
-      <a href="mailto:edi.prasetiyo1994@gmail.com" class="text-indigo-600 hover:underline">📧 edi.prasetiyo1994@gmail.com</a>
-      <a href="https://www.linkedin.com/in/edi-prasetiyo-455194199" target="_blank" class="text-indigo-600 hover:underline">💼 LinkedIn</a>
+  <section id="contact" class="max-w-4xl mx-auto p-8 my-12 bg-white rounded-2xl shadow text-center">
+    <h3 class="text-2xl font-bold mb-4 border-b-2 border-indigo-500 inline-block pb-1">Kontak</h3>
+    <p class="text-gray-600">Hubungi saya melalui:</p>
+    <div class="mt-4 space-y-3">
+      <a href="mailto:edi.prasetiyo1994@gmail.com" class="block text-indigo-600 font-medium hover:underline">📧 edi.prasetiyo1994@gmail.com</a>
+      <a href="https://www.linkedin.com/in/edi-prasetiyo-455194199" target="_blank" class="block text-indigo-600 font-medium hover:underline">💼 LinkedIn</a>
+      <p class="text-gray-700">📱 082115525327</p>
     </div>
-    <p class="mt-2 text-gray-500">📱 082115525327</p>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4 mt-10">
+  <footer class="bg-gray-800 text-white text-center py-4 mt-12">
     <p>&copy; 2025 Edi Prasetiyo. All rights reserved.</p>
   </footer>
 
 </body>
 </html>
-
-
