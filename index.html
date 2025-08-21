@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portofolio - Edi Prasetiyo</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi muncul halus */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
-<body class="bg-gray-50 font-sans leading-relaxed text-gray-800">
+<body class="bg-gray-50 font-sans leading-relaxed text-gray-800 relative">
 
   <!-- Header -->
   <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-md sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Edi Prasetiyo</h1>
+      <h1 class="text-xl md:text-2xl font-bold">Edi Prasetiyo</h1>
       <nav class="hidden md:flex space-x-6">
         <a href="#about" class="hover:underline">Tentang Saya</a>
         <a href="#experience" class="hover:underline">Pengalaman</a>
@@ -22,18 +34,23 @@
   </header>
 
   <!-- Hero -->
-  <section class="text-center py-16 bg-white shadow">
+  <section class="text-center py-12 md:py-16 bg-white shadow fade-up px-4">
     <img src="assets/profile.jpg" alt="Foto Profil" 
-         class="w-36 h-36 object-cover rounded-full mx-auto shadow-lg border-4 border-white">
-    <h2 class="mt-6 text-3xl font-extrabold text-gray-800">EDI PRASETIYO</h2>
-    <p class="mt-2 text-lg text-indigo-600 font-medium">QA/QC | Business Analyst | IT Support</p>
-    <p class="mt-1 text-gray-500 italic">“Mengoptimalkan sistem dan produk agar lebih efektif & efisien.”</p>
+         class="w-28 h-28 md:w-36 md:h-36 object-cover rounded-full mx-auto shadow-lg border-4 border-white">
+    <h2 class="mt-6 text-2xl md:text-3xl font-extrabold text-gray-800">EDI PRASETIYO</h2>
+    <p class="mt-2 text-base md:text-lg text-indigo-600 font-medium">QA/QC | Business Analyst | IT Support</p>
+    <p class="mt-1 text-gray-500 italic text-sm md:text-base">“Mengoptimalkan sistem dan produk agar lebih efektif & efisien.”</p>
+    <!-- Tombol Download CV -->
+    <a href="assets/CV.pdf" download
+       class="mt-6 inline-block bg-indigo-600 text-white px-5 py-2 md:px-6 md:py-3 rounded-lg shadow hover:bg-indigo-700 transition text-sm md:text-base">
+       📄 Download CV
+    </a>
   </section>
 
   <!-- Tentang Saya -->
-  <section id="about" class="max-w-6xl mx-auto px-6 py-12 my-12 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Tentang Saya</h3>
-    <p>
+  <section id="about" class="max-w-6xl mx-auto px-6 py-10 md:py-12 my-8 md:my-12 bg-white rounded-2xl shadow fade-up">
+    <h3 class="text-xl md:text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Tentang Saya</h3>
+    <p class="text-sm md:text-base">
       Saya seorang profesional di bidang teknologi dengan pengalaman lebih dari 7 tahun sebagai Business Analyst dan QA/QC. 
       Berpengalaman dalam analisa bisnis, pengujian sistem manual & otomatis, serta mendukung pengembangan ERP Odoo. 
       Latar belakang pendidikan saya adalah S.Kom dari Universitas Budi Luhur dengan IPK 3.48.
@@ -41,15 +58,15 @@
   </section>
 
   <!-- Pengalaman -->
-  <section id="experience" class="max-w-6xl mx-auto px-6 py-12 my-12 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-8 border-b-2 border-indigo-500 inline-block pb-1">Pengalaman Kerja</h3>
-    <div class="grid md:grid-cols-2 gap-6">
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-10 md:py-12 my-8 md:my-12 bg-white rounded-2xl shadow fade-up">
+    <h3 class="text-xl md:text-2xl font-bold mb-8 border-b-2 border-indigo-500 inline-block pb-1">Pengalaman Kerja</h3>
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-6">
 
       <!-- Card 1 -->
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition flex flex-col">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1 fade-up">
         <h4 class="text-lg font-semibold text-indigo-700">QA/QC</h4>
         <p class="text-sm text-gray-500 mb-3">PT. Garuda Digital Kreatif | Des 2021 - Sep 2025</p>
-        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1 flex-grow">
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
           <li>Membuat dokumen Test Case, UAT & Ticketing Bug</li>
           <li>Testing manual & otomatis (Selenium)</li>
           <li>Monitoring sprint, turnamen, dan topup</li>
@@ -58,10 +75,10 @@
       </div>
 
       <!-- Card 2 -->
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition flex flex-col">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1 fade-up">
         <h4 class="text-lg font-semibold text-indigo-700">Business Analyst</h4>
         <p class="text-sm text-gray-500 mb-3">PT. Citra Multi Services | Jan 2018 - Des 2021</p>
-        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1 flex-grow">
+        <ul class="list-disc ml-5 text-gray-700 text-sm space-y-1">
           <li>Membuat flow proses bisnis & mitigasi risiko</li>
           <li>Testing ERP Odoo & membuat modul sederhana</li>
           <li>Menyusun manual guide & blueprint dokumentasi</li>
@@ -69,10 +86,10 @@
       </div>
 
       <!-- Card 3 -->
-      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition flex flex-col">
+      <div class="p-6 bg-gray-50 rounded-xl shadow hover:shadow-lg transition transform hover:-translate-y-1 fade-up">
         <h4 class="text-lg font-semibold text-indigo-700">Call Center & IT Support</h4>
         <p class="text-sm text-gray-500 mb-3">PT. Transcosmos Indonesia | Mar 2017 - Agu 2017</p>
-        <p class="text-gray-700 text-sm flex-grow">
+        <p class="text-gray-700 text-sm">
           Membantu dukungan teknis dan layanan pelanggan (by project).
         </p>
       </div>
@@ -81,35 +98,85 @@
   </section>
 
   <!-- Keterampilan -->
-  <section id="skills" class="max-w-6xl mx-auto px-6 py-12 my-12 bg-white rounded-2xl shadow">
-    <h3 class="text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Keterampilan</h3>
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-10 md:py-12 my-8 md:my-12 bg-white rounded-2xl shadow fade-up">
+    <h3 class="text-xl md:text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Keterampilan</h3>
     <div class="flex flex-wrap gap-3">
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Figma</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Analisa Bisnis</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Microsoft Office</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Diagram Tools</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Adobe Photoshop</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Odoo Functional</span>
-      <span class="px-4 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full">Selenium</span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        💻 Figma
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        📊 Analisa Bisnis
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        📝 Microsoft Office
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        🔄 Diagram Tools
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        🎨 Adobe Photoshop
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        ⚙️ Odoo Functional
+      </span>
+      <span class="px-3 py-2 bg-indigo-100 text-indigo-700 font-medium rounded-full flex items-center text-sm md:text-base">
+        🧪 Selenium
+      </span>
     </div>
   </section>
 
   <!-- Kontak -->
-  <section id="contact" class="max-w-6xl mx-auto px-6 py-12 my-12 bg-white rounded-2xl shadow text-center">
-    <h3 class="text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Kontak</h3>
-    <p class="text-gray-600">Hubungi saya melalui:</p>
-    <div class="mt-4 space-y-3">
-      <a href="mailto:edi.prasetiyo1994@gmail.com" class="block text-indigo-600 font-medium hover:underline">📧 edi.prasetiyo1994@gmail.com</a>
-      <a href="https://www.linkedin.com/in/edi-prasetiyo-455194199" target="_blank" class="block text-indigo-600 font-medium hover:underline">💼 LinkedIn</a>
-      <p class="text-gray-700">📱 082115525327</p>
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-10 md:py-12 my-8 md:my-12 bg-white rounded-2xl shadow text-center fade-up">
+    <h3 class="text-xl md:text-2xl font-bold mb-6 border-b-2 border-indigo-500 inline-block pb-1">Kontak</h3>
+    <p class="text-gray-600 mb-4">Hubungi saya melalui:</p>
+    <div class="space-y-3">
+      <a href="mailto:edi.prasetiyo1994@gmail.com" class="flex items-center justify-center text-indigo-600 font-medium hover:underline">
+        📧 <span class="ml-2">edi.prasetiyo1994@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/edi-prasetiyo-455194199" target="_blank" class="flex items-center justify-center text-indigo-600 font-medium hover:underline">
+        💼 <span class="ml-2">LinkedIn</span>
+      </a>
+      <p class="text-gray-700 flex items-center justify-center">
+        📱 <span class="ml-2">082115525327</span>
+      </p>
     </div>
   </section>
 
+  <!-- Tombol Scroll To Top -->
+  <button id="scrollTopBtn" 
+          class="hidden fixed bottom-6 right-6 bg-indigo-600 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition animate-bounce"
+          onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    ⬆
+  </button>
+
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4 mt-12">
+  <footer class="bg-gray-800 text-white text-center py-4 mt-12 text-sm md:text-base">
     <p>&copy; 2025 Edi Prasetiyo. All rights reserved.</p>
   </footer>
 
+  <!-- Script Animasi & Scroll Button -->
+  <script>
+    // Fade-up effect on scroll
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Scroll To Top Button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        scrollBtn.classList.remove("hidden");
+      } else {
+        scrollBtn.classList.add("hidden");
+      }
+    });
+  </script>
+
 </body>
 </html>
-
