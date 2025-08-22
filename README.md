@@ -12,7 +12,7 @@ Website ini berisi informasi tentang pengalaman kerja, keterampilan, dan kontak 
 Saya **Edi Prasetiyo**, seorang profesional di bidang teknologi dengan pengalaman lebih dari 7 tahun di bidang **QA/QC** dan **Business Analyst**.  
 Saya berpengalaman dalam pengujian sistem manual & otomatis, analisa bisnis, dokumentasi sistem, serta mendukung implementasi ERP Odoo.  
 
-- 🎓 Lulusan **S.Kom Universitas Budi Luhur** (IPK 3.48)  
+- 🎓 Lulusan **S.Kom Universitas Budi Luhur** (IPK 3.44)  
 - 🏠 Berdomisili di Bogor, Jawa Barat  
 
 ---
