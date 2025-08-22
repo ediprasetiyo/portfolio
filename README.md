@@ -3,8 +3,8 @@
 Selamat datang di portofolio online saya.  
 Website ini berisi informasi tentang pengalaman kerja, keterampilan, dan kontak saya.  
 
-👉 **[Lihat Portofolio Live di GitHub Pages](https://username.github.io/portfolio/)**  
-*(ganti `username` dengan akun GitHub tuan muda)*
+👉 **[Lihat Portofolio Live di GitHub Pages](https://ediprasetiyo.github.io/portfolio/)**  
+
 
 ---
 
