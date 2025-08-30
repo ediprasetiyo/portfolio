@@ -1,28 +1,29 @@
 # 🌟 Portofolio - Edi Prasetiyo
 
 Selamat datang di portofolio online saya.  
-Website ini berisi informasi tentang pengalaman kerja, keterampilan, dan kontak saya.  
+Website ini menampilkan informasi mengenai **pengalaman kerja**, **keterampilan**, serta **kontak pribadi**.  
 
 👉 **[Lihat Portofolio Live di GitHub Pages](https://ediprasetiyo.github.io/portfolio/)**  
-
 
 ---
 
 ## 👨‍💻 Tentang Saya
-Saya **Edi Prasetiyo**, seorang profesional di bidang teknologi dengan pengalaman lebih dari 7 tahun di bidang **QA/QC** dan **Business Analyst**.  
-Saya berpengalaman dalam pengujian sistem manual & otomatis, analisa bisnis, dokumentasi sistem, serta mendukung implementasi ERP Odoo.  
+Saya **Edi Prasetiyo**, seorang profesional di bidang teknologi dengan pengalaman lebih dari **7 tahun** di bidang **QA/QC** dan **Business Analyst**.  
+Berpengalaman dalam pengujian sistem (manual & otomatis), analisis proses bisnis, dokumentasi sistem, serta implementasi **ERP Odoo**.  
 
-- 🎓 Lulusan **S.Kom Universitas Budi Luhur** (IPK 3.44)  
-- 🏠 Berdomisili di Bogor, Jawa Barat  
+- 🎓 **S.Kom Universitas Budi Luhur** – IPK 3.44  
+- 🏠 Berdomisili di **Bogor, Jawa Barat**  
 
 ---
 
 ## 🛠️ Keterampilan
 - **Quality Assurance** (Manual & Automation Testing dengan Selenium)  
-- **Business Analyst** (Process Flow, Risk Mitigation, Blueprint, Documentation)  
+- **Business Analysis** (Process Flow, Risk Mitigation, Blueprint, Documentation)  
 - **ERP Odoo Functional**  
 - **Figma & Adobe Photoshop**  
 - **Microsoft Office & Diagram Tools**  
+- **Pemrograman:** Python, HTML, PHP, Vue3  
+- **Database:** MySQL, PostgreSQL, MongoDB  
 
 ---
 
@@ -30,27 +31,29 @@ Saya berpengalaman dalam pengujian sistem manual & otomatis, analisa bisnis, dok
 
 **QA/QC – PT. Garuda Digital Kreatif**  
 *Des 2021 – Sep 2025*  
-- Membuat Test Case, UAT, & Ticketing laporan bug  
-- Testing manual & otomatis menggunakan Selenium  
-- Monitoring sprint, turnamen, dan topup  
-- Membantu desain UI/UX dengan Figma  
+- Membuat Test Case, UAT, & ticket bug  
+- Melakukan pengujian manual & otomatis dengan Selenium  
+- Monitoring sprint, turnamen, dan top-up  
+- Memberikan masukan UI/UX menggunakan Figma  
 
 **Business Analyst – PT. Citra Multi Services**  
 *Jan 2018 – Des 2021*  
-- Membuat flow proses bisnis & mitigasi risiko  
-- Testing sistem ERP Odoo & membuat modul sederhana  
-- Membuat manual guide & blueprint dokumentasi client  
+- Menyusun flow proses bisnis & mitigasi risiko  
+- Testing ERP Odoo & membuat modul sederhana  
+- Membuat manual guide & blueprint dokumentasi project  
 
 **Call Center & IT Support – PT. Transcosmos Indonesia**  
 *Mar 2017 – Agu 2017 (by project)*  
+- Memberikan dukungan teknis & layanan pelanggan  
 
 ---
 
 ## 📬 Kontak
-- 📧 Email: **edi.prasetiyo1994@gmail.com**  
-- 💼 LinkedIn: [linkedin.com/in/edi-prasetiyo-455194199](https://www.linkedin.com/in/edi-prasetiyo-455194199)  
-- 📱 Telepon/WhatsApp: **082115525327**  
+- 📧 **Email:** [edi.prasetiyo1994@gmail.com](mailto:edi.prasetiyo1994@gmail.com)  
+- 💼 **LinkedIn:** [linkedin.com/in/edi-prasetiyo-455194199](https://www.linkedin.com/in/edi-prasetiyo-455194199)  
+- 🌐 **Portfolio Website:** [ediprasetiyo.github.io/portfolio](https://ediprasetiyo.github.io/portfolio/)  
+- 📱 **Telepon/WhatsApp:** 082115525327  
 
 ---
 
-© 2025 - Edi Prasetiyo
+© 2025 - Edi Prasetiyo. All rights reserved.
